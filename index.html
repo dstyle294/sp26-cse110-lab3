@@ -6,7 +6,7 @@
     <meta name="keywords" content="Meeting Notes, SuperSet">
     <meta name="description" content="A typical meeting for my full-stack social media workout app">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
   </head>
   <body>
     <header>
@@ -46,17 +46,71 @@
               <li>Is it <em>really</em> that important to add new features? People really just want an app that works. </li>
             </ul>
           <h3>Anything else?</h3>
-            Dr. Seuss likes the app, because: <br />
-            <i>You can cheer for a pal! You can like their big flex!<br />
-            It’s better than sending a boring old text. </i>
+            <details>
+              <summary>Dr. Seuss likes the app, because: </summary>
+              <i>You can cheer for a pal! You can like their big flex!<br />
+              It’s better than sending a boring old text. </i>
+            </details>
         </div>
       </section>
       <hr />
+
+      <section>
+        <h2>Want to improve SuperSet?</h2>
+        <fieldset>
+          <legend>Your inputs!</legend>
+          <form>
+            Enter your name: 
+            <input
+            type="text"
+            id="name"
+            name="name"
+            minLength="4"
+            size="10" /> <br />
+            <br />
+            <label for="occupation">What's your occupation?</label> <br />
+            <input list="occupations" id="occupation" name="occupation" />
+            <datalist id="occupations">
+              <option value="Student"></option>
+              <option value="Developer"></option>
+              <option value="Gym Bro"></option>
+              <option value="Unemployed :("></option>
+            </datalist> <br />
+            <br />
+
+            <label for="category">What category is your suggestion in?</label> <br />
+            <select name="categories" id="category">
+              <option value="">--Please choose an option</option>
+              <option value="New feature">New Feature</option>
+              <option value="Bug fix">Bug Fix</option>
+              <option value="UI Suggestion">UI Suggestion</option>
+              <option value="Other">Other</option>
+            </select> <br />
+            <br />
+            What is your suggestion? <br />
+            <textarea id="feedback" name="feedback" rows="5" cols="33" placeholder="Speak your mind">
+            </textarea> <br />
+            <br />
+            Do you love SuperSet??
+            <button type="button">Yes</button> <button type="button">Yes</button>
+          </form>
+          <form></form>
+        </fieldset>
+      </section>
+
       <section>
         <h2>Important Assets</h2>
-        <img src="images/whiteboard.jpg" alt="Whiteboard discussion on why less features is better"/>
+        <img controls width="750" src="media/whiteboard.jpg" alt="Whiteboard discussion on why less features is better"/>
+        <h3>Meeting recording</h3>
+        <video controls width="500">
+          <source src="media/meeting_video.mp4" type="video/mp4" />
+        </video> <br/>
+        Listen to our meeting as well: <br />
+        <audio controls src="media/meeting_audio.mp3"></audio>
       </section>
     </main>
+
+    <hr />
 
     <footer>
       <h3>Important Links</h3>
