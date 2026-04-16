@@ -1,0 +1,75 @@
+/* Class Selector */
+.highlight {
+  background-color: yellow;
+}
+
+/* ID Selector */
+h2#agenda {
+  color: rebeccapurple;
+}
+
+/* Universal Selector */
+ * {
+  background-color: linen;
+}
+
+/* Element Selector */
+span {
+  color: red;
+}
+
+/* Attribute Selector */
+a[href] {
+  
+}
+
+/* Pseudo-class Selector */
+nav a:hover{
+  font-style: italic;
+}
+
+/* Selector List */
+h2, h3 {
+  color: deepskyblue
+}
+
+/* Descendant combinator */
+main h3 {
+  color: deeppink;
+}
+
+/* Child combinator */
+main > h2 {
+  color: chartreuse;
+}
+
+/* Adjacent sibling combinator */
+img + h3 {
+  font-style: italic;
+}
+
+/* General sibling combinator */
+h3 ~ ul {
+  color: indianred;
+}
+
+/* Combining two selectors */
+h3.questions {
+  font-style: italic;
+}
+
+h2:has(+ fieldset) {
+  font-weight: lighter
+}
+
+input {
+  background-color:lightgray;
+  &#name {
+    background-color: gold;
+  }
+}
+
+
+
+
+
