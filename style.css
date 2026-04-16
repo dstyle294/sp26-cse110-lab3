@@ -1,6 +1,13 @@
+/* Root colors */
+:root {
+  --main-bg-color: hsl(30, 53%, 86%);
+  --secondary-bg-color: linen;
+}
+
 /* Class Selector */
 .highlight {
-  background-color: yellow;
+  background-color: color-mix(in hsl, hsl(199, 49%, 64%), coral);;
+  color: #000000;
 }
 
 /* ID Selector */
@@ -8,14 +15,16 @@ h2#agenda {
   color: rebeccapurple;
 }
 
-/* Universal Selector */
+/* Universal Selector with fallback */
  * {
-  background-color: linen;
+  background-color: var(--main-bg-color, var(--secondary-bg-color, beige));
+  margin-left:10px;
 }
 
 /* Element Selector */
 span {
-  color: red;
+  color: color(a98-rgb 1 0 0);
+  margin-left: 0;
 }
 
 /* Attribute Selector */
@@ -30,7 +39,7 @@ nav a:hover{
 
 /* Selector List */
 h2, h3 {
-  color: deepskyblue
+  color: rgb(0, 191, 255);
 }
 
 /* Descendant combinator */
@@ -40,7 +49,7 @@ main h3 {
 
 /* Child combinator */
 main > h2 {
-  color: chartreuse;
+  color: rgb(110, 193, 27);
 }
 
 /* Adjacent sibling combinator */
@@ -58,10 +67,12 @@ h3.questions {
   font-style: italic;
 }
 
+/* :has() */
 h2:has(+ fieldset) {
   font-weight: lighter
 }
 
+/* Nested selector */
 input {
   background-color:lightgray;
   &#name {
