@@ -18,19 +18,22 @@ h2#agenda {
 /* Universal Selector with fallback */
  * {
   background-color: var(--main-bg-color, var(--secondary-bg-color, beige));
+}
+
+body {
   margin-left:10px;
 }
 
 /* Element Selector */
 span {
   color: color(a98-rgb 1 0 0);
-  margin-left: 0;
 }
 
 /* Attribute Selector */
-a[href] {
-  
+a[href="https://trello.com/invite/b/689cd515f246b033cd53a08b/ATTIc3bda6181345f3958b2759f5b4c1a16e9E6DEBFE/superset-feature-tracker"] {
+  color: crimson;
 }
+
 
 /* Pseudo-class Selector */
 nav a:hover{
@@ -40,11 +43,13 @@ nav a:hover{
 /* Selector List */
 h2, h3 {
   color: rgb(0, 191, 255);
+  margin-bottom: 0.5cm;
 }
 
 /* Descendant combinator */
 main h3 {
   color: deeppink;
+  margin-left: 0.8pc;
 }
 
 /* Child combinator */
@@ -78,6 +83,20 @@ input {
   &#name {
     background-color: gold;
   }
+}
+
+/* 3vh is 3% of the viewport's height */
+form {
+  margin-top: 3vh;
+}
+
+button {
+  margin-right: 1em;
+}
+
+/* 1ex is the height of one x */
+li {
+  margin-bottom: 2ex;
 }
 
 
