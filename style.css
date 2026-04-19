@@ -68,6 +68,12 @@ img + h3 {
 /* General sibling combinator */
 h3 ~ ul {
   color: indianred;
+  border-width: 4px;
+  border-color: black;
+  border-radius: 5px;
+  border-style:dotted;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Combining two selectors */
@@ -100,7 +106,7 @@ button {
 
 /* 1ex is the height of one x */
 li {
-  margin-bottom: 2ex;
+  margin-bottom: 1ex;
 }
 
 input, select, textarea {
