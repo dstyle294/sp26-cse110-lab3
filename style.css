@@ -38,6 +38,7 @@ a[href="https://trello.com/invite/b/689cd515f246b033cd53a08b/ATTIc3bda6181345f39
 /* Pseudo-class Selector */
 nav a:hover{
   font-style: italic;
+  padding-right: 2em;
 }
 
 /* Selector List */
@@ -56,6 +57,7 @@ main h3 {
 main > h2 {
   color: rgb(110, 193, 27);
   margin: auto;
+  padding-top: 5px;
 }
 
 /* Adjacent sibling combinator */
@@ -89,6 +91,7 @@ input {
 /* 3vh is 3% of the viewport's height */
 form {
   margin-top: 3vh;
+  padding-left: 10px;
 }
 
 button {
@@ -102,6 +105,14 @@ li {
 
 input, select, textarea {
   margin: 10px 0px 0px 10px;
+}
+
+img, video, audio {
+  padding: 1% 1% 1% 1%;
+}
+
+details {
+  padding-bottom: 10px;
 }
 
 
