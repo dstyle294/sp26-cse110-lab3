@@ -51,6 +51,7 @@ h2, h3 {
 main h3 {
   color: deeppink;
   margin-left: 0.8pc;
+  text-decoration:underline;
 }
 
 /* Child combinator */
@@ -119,6 +120,7 @@ img, video, audio {
 
 details {
   padding-bottom: 10px;
+  text-align:center;
 }
 
 
