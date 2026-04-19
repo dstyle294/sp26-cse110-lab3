@@ -55,6 +55,7 @@ main h3 {
 /* Child combinator */
 main > h2 {
   color: rgb(110, 193, 27);
+  margin: auto;
 }
 
 /* Adjacent sibling combinator */
@@ -74,7 +75,7 @@ h3.questions {
 
 /* :has() */
 h2:has(+ fieldset) {
-  font-weight: lighter
+  font-weight: lighter;
 }
 
 /* Nested selector */
@@ -97,6 +98,10 @@ button {
 /* 1ex is the height of one x */
 li {
   margin-bottom: 2ex;
+}
+
+input, select, textarea {
+  margin: 10px 0px 0px 10px;
 }
 
 
