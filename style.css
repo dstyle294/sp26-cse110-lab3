@@ -106,7 +106,6 @@ input {
 
 /* 3vh is 3% of the viewport's height */
 form {
-  margin-top: 3vh;
   padding-left: 10px;
 }
 
@@ -121,15 +120,23 @@ li {
 
 input, select, textarea {
   margin: 10px 0px 0px 10px;
+  width: 200px;
+}
+
+textarea {
+  height: 100px;
 }
 
 img, video, audio {
   padding: 1% 1% 1% 1%;
+  max-width: 10cm;
+  min-width: 5cm;
 }
 
 details {
   padding-bottom: 10px;
   text-align:center;
+  margin-top: 2%;
 }
 
 fieldset {
