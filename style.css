@@ -41,6 +41,15 @@ nav a:hover{
   padding-right: 2em;
 }
 
+.recording button,
+.recording video {
+  display: block;
+}
+
+.recording button:hover + video {
+  visibility: hidden
+}
+
 /* Selector List */
 h2, h3 {
   color: rgb(0, 191, 255);
@@ -121,6 +130,10 @@ img, video, audio {
 details {
   padding-bottom: 10px;
   text-align:center;
+}
+
+fieldset {
+  display: inline-block;
 }
 
 
