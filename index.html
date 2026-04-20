@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      h1 {
+        color: maroon;
+      }
+    </style>
     <title>The 20th Weekly Meeting for SuperSet</title>
     <meta charset="utf-8">
     <meta name="keywords" content="Meeting Notes, SuperSet">
@@ -11,17 +18,17 @@
   <body>
     <header>
       <h1>Meeting Minutes: Weekly Meetings for SuperSet</h1>
-      <h2>Agenda: Future of SuperSet?</h2>
+      <h2 style="font-weight: bolder">Agenda: Future of SuperSet?</h2>
       <h3>Date: 8th April, 2026</h3>
     </header>
 
     <hr>
 
     <main>
+      <h2>Attendance List</h2>
       <section>
-        <h2>Attendance List</h2>
         <div>
-          <ol>
+          <ol class="attendance">
             <li>Sahil Dalal</li>
             <li>Dr. Seuss</li>
             <li>Warren Peace</li>
@@ -29,38 +36,44 @@
         </div>
       </section>
       <hr />
-      <section>
-        <h2>Overall Agenda</h2>
-        <p>
-          Meeting will cover <span>crucial</span> topics including development plan for SuperSet, important features and what has changed since last meeting (January of this year).
-        </p>
+      <h2 class="agenda">Overall Agenda</h2>
+      <p>
+        Meeting will cover <span>crucial</span> topics including development plan for SuperSet, important features and what has changed since last meeting (January of this year).
+      </p>
+      <section class="agenda">
+        <div class="item">
         <h3>Lingering topics</h3>
           <ul>
             <li><b>Deployment:</b> How, where, and when? How much are we willing to spend on it?</li>
             <li><b>New features:</b> What are most crucial to usability of the app? Focus on MVP. </li>
             <li><b>Testing:</b> Who will test, and how? What guidelines will we send?</li>
           </ul>
+        </div>
+        <div class="item">
         <h3>New topics</h3>
           <ul>
             <li>User page should be <strong>top priority</strong> for usability of the app.</li>
             <li>Stomach the $99 cost to deploy app on TestFlight - it is a <i>business expense</i></li>
             <li>Is it <em>really</em> that important to add new features? People really just want an app that works. </li>
           </ul>
-        <h3>Anything else?</h3>
-          <details>
-            <summary>Dr. Seuss likes the app, because: </summary>
-            <i>You can cheer for a pal! You can like their big flex!<br />
-            It’s better than sending a boring old text. </i>
-          </details>
+        </div>
+        <div class="item">
+        <h3 class="questions">Anything else?</h3>
+        </div>
       </section>
+      <details>
+        <summary>Dr. Seuss likes the app, because: </summary>
+        <i>You can cheer for a pal! You can like their big flex!</i><br />
+        <i>It’s better than sending a boring old text. </i>
+      </details>
       <hr />
 
       <section>
-        <h2>Want to improve SuperSet?</h2>
+        <h2 class="questions">Want to improve SuperSet?</h2>
         <fieldset>
           <legend>Your inputs!</legend>
           <form>
-            Enter your name: 
+            Enter your name: <br />
             <input
             type="text"
             id="name"
@@ -92,9 +105,8 @@
             </textarea> <br />
             <br />
             Do you love SuperSet??
-            <button type="button">Yes</button> <button type="button">Yes</button>
+            <button class="yes" type="button">Yes</button> <button class="yes" type="button">Yes</button>
           </form>
-          <form></form>
         </fieldset>
       </section>
 
@@ -102,10 +114,13 @@
         <h2>Important Assets</h2>
         <img width="750" src="media/whiteboard.jpg" alt="Whiteboard discussion on why less features is better"/>
         <h3>Meeting recording</h3>
-        <video controls width="500">
-          <source src="media/meeting_video.mp4" type="video/mp4" />
-        </video> <br/>
-        Listen to our meeting as well: <br />
+        <div class="recording">
+          <button class="hover">Hover over me!</button> 
+          <video controls width="500">
+            <source src="media/meeting_video.mp4" type="video/mp4" />
+          </video> 
+        </div>
+        Listen to our <span class="highlight">meeting</span> as well: <br />
         <audio controls src="media/meeting_audio.mp3"></audio>
       </section>
     </main>

@@ -1,0 +1,205 @@
+@import url('https://googleapis.com');
+
+/* Root colors */
+:root {
+  --main-bg-color: hsl(30, 53%, 86%);
+  --secondary-bg-color: linen;
+}
+
+/* Class Selector */
+.highlight {
+  background-color: color-mix(in hsl, hsl(199, 49%, 64%), coral);;
+  color: #000000;
+}
+
+/* ID Selector */
+h2#agenda {
+  color: rebeccapurple;
+  text-align: center;
+}
+
+.agenda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.attendance {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 15px; 
+  grid-auto-rows: 60px; 
+  
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .attendance {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.attendance li {
+  border-width: 2px;
+  border-style: solid;
+  border-color:aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.item {
+  padding: 10px;
+  align-self: center;
+}
+
+
+/* Universal Selector with fallback */
+ * {
+  background-color: var(--main-bg-color, var(--secondary-bg-color, beige));
+}
+
+body {
+  margin-left:10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Element Selector */
+span {
+  color: color(a98-rgb 1 0 0);
+}
+
+/* Attribute Selector */
+a[href="https://trello.com/invite/b/689cd515f246b033cd53a08b/ATTIc3bda6181345f3958b2759f5b4c1a16e9E6DEBFE/superset-feature-tracker"] {
+  color: crimson;
+}
+
+
+/* Pseudo-class Selector */
+nav a:hover{
+  font-style: italic;
+  padding-right: 2em;
+}
+
+.recording button,
+.recording video {
+  display: block;
+}
+
+.recording button:hover + video {
+  visibility: hidden
+}
+
+/* Selector List */
+h2, h3 {
+  color: rgb(0, 191, 255);
+  margin-bottom: 0.5cm;
+}
+
+/* Descendant combinator */
+main h3 {
+  color: deeppink;
+  margin-left: 0.8pc;
+  text-decoration:underline;
+}
+
+/* Child combinator */
+main > h2 {
+  color: rgb(110, 193, 27);
+  margin: auto;
+  padding-top: 5px;
+}
+
+/* Adjacent sibling combinator */
+img + h3 {
+  font-style: italic;
+  position: sticky;
+  top: 10px;
+}
+
+/* General sibling combinator */
+h3 ~ ul {
+  color: indianred;
+  border-width: 4px;
+  border-color: black;
+  border-radius: 5px;
+  border-style:dotted;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Combining two selectors */
+h3.questions {
+  font-style: italic;
+}
+
+/* :has() */
+h2:has(+ fieldset) {
+  font-weight: lighter;
+}
+
+/* Nested selector */
+input {
+  background-color:lightgray;
+  &#name {
+    background-color: gold;
+  }
+}
+
+/* 3vh is 3% of the viewport's height */
+form {
+  padding-left: 10px;
+}
+
+button {
+  margin-right: 1em;
+}
+
+/* 1ex is the height of one x */
+li {
+  margin-bottom: 1ex;
+}
+
+input, select, textarea {
+  margin: 10px 0px 0px 10px;
+  width: 200px;
+}
+
+textarea {
+  height: 100px;
+}
+
+img, video, audio {
+  padding: 1% 1% 1% 1%;
+  max-width: 10cm;
+  min-width: 5cm;
+}
+
+details {
+  padding-bottom: 10px;
+  text-align:center;
+  margin-top: 2%;
+}
+
+fieldset {
+  display: inline-block;
+}
+
+button.hover {
+  position: relative;
+  left: 20px;
+}
+
+button.hover:hover {
+  background-color:lightblue;
+}
+
+button.yes:active {
+  background-color: green;
+}
+
+
+
+
+
