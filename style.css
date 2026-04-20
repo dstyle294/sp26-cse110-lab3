@@ -65,7 +65,7 @@ body {
 
 /* Element Selector */
 span {
-  color: color(a98-rgb 1 0 0);
+  color: color(display-p3 1 0 0);
 }
 
 /* Attribute Selector */
