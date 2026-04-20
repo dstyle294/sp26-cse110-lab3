@@ -73,6 +73,8 @@ main > h2 {
 /* Adjacent sibling combinator */
 img + h3 {
   font-style: italic;
+  position: sticky;
+  top: 10px;
 }
 
 /* General sibling combinator */
@@ -141,6 +143,11 @@ details {
 
 fieldset {
   display: inline-block;
+}
+
+button.hover {
+  position: relative;
+  left: 20px;
 }
 
 
