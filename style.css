@@ -1,5 +1,3 @@
-@import url('https://googleapis.com');
-
 /* Root colors */
 :root {
   --main-bg-color: hsl(30, 53%, 86%);
@@ -62,7 +60,7 @@ h2#agenda {
 
 body {
   margin-left:10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Courier New', sans-serif;
 }
 
 /* Element Selector */
