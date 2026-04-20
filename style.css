@@ -150,6 +150,14 @@ button.hover {
   left: 20px;
 }
 
+button.hover:hover {
+  background-color:lightblue;
+}
+
+button.yes:active {
+  background-color: green;
+}
+
 
 
 
