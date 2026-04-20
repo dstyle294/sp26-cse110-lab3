@@ -13,7 +13,20 @@
 /* ID Selector */
 h2#agenda {
   color: rebeccapurple;
+  text-align: center;
 }
+
+.agenda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.item {
+  padding: 10px;
+  align-self: center;
+}
+
 
 /* Universal Selector with fallback */
  * {
